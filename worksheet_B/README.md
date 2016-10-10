@@ -16,3 +16,5 @@
     If Tries > 4 Then
     End program
     Quit
+
+![alt-tag](https://raw.githubusercontent.com/StevenCowie/comp110-worksheets/master/Fallout%204%20mini%20game%20Flowchart.png)
