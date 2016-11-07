@@ -31,13 +31,13 @@ class OxoBoard:
     def get_winner(self):
         # Checks whole board to see if there are 3 in row (vertical, horizontal and diagonal)
         for i in xrange(3):
-            if self.gameBoard[i][0] == self.gameBoard[i][1] and self.gameBoard[i][2]!= 0:
+            if self.gameBoard[i][0] == self.gameBoard[i][1] == self.gameBoard[i][2] and self.gameBoard[i][0] != 0:
                 return self.gameBoard[i][0]
-            elif self.gameBoard[0][i] == self.gameBoard[1][i] and self.gameBoard[2][i] != 0:
+            elif self.gameBoard[0][i] == self.gameBoard[1][i] == self.gameBoard[2][i] and self.gameBoard[0][i]  != 0:
                 return self.gameBoard[0][i]
-            elif self.gameBoard[0][0] == self.gameBoard[1][1] and self.gameBoard[2][2] != 0:
+            elif self.gameBoard[0][0] == self.gameBoard[1][1] == self.gameBoard[2][2] and self.gameBoard[0][0] != 0:
                 return self.gameBoard[0][0]
-            elif self.gameBoard[0][2] == self.gameBoard[1][1] and self.gameBoard[2][0] != 0:
+            elif self.gameBoard[0][2] == self.gameBoard[1][1] == self.gameBoard[2][0] and self.gameBoard[0][2] != 0:
                 return self.gameBoard[0][2]
         return 0
 
