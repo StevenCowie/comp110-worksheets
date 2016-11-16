@@ -27,7 +27,7 @@ while s0 != 0:
 ~~~
 
 (d)
-because the inner loop keeps looping until it has looped 1 less time than the outer loop. In the inner loop the value of s1 is multiplied by the number of loops and gets stored in s2 until the inner loop is finished and this is when s1 = s2 for when the inner loop starts its next loop, so if you put in 10 in the end you would get 10x9x8x7x6x5x4x3x2x1 = s1
+because the inner loop keeps looping until it has looped 1 less time than the outer loop. In the inner loop the value of s1 is multiplied by the number of loops and gets stored in s2 until the inner loop is finished and this is when s1 = s2 for when the inner loop starts its next loop, so if you put in 10 in the end you would get (10x9) the first loop, (10x9x8) the second and eventually you would end up with(10x9x8x7x6x5x4x3x2x1) when it is finished.
 
 (e)
 ~~~
