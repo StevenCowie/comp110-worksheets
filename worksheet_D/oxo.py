@@ -1,19 +1,18 @@
-
 class OxoBoard:
     def __init__(self):
         #Initialises board array
-        self.gameBoard = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+        self.game_Board = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
 
     def get_square(self, x, y):
         #Returns 0, 1 or 2 depending on the contents of the specified square.
-        return  self.gameBoard[x][y]
+        return  self.game_Board[x][y]
 
 
     def set_square(self, x, y, mark):
         #Checks content of square and fills empty spots with marks and returns True, is space is taken returns False
-        if self.gameBoard[x][y] == 0:
-            self.gameBoard[x][y] = mark
+        if self.game_Board[x][y] == 0:
+            self.game_Board[x][y] = mark
             return True
         else:
             return False
@@ -23,22 +22,22 @@ class OxoBoard:
         #Checks every square to see if there are any empty squares left, returns True if none are empty
         for x in xrange(3):
             for y in xrange(3):
-                if self.gameBoard[x][y] == 0:
+                if self.game_Board[x][y] == 0:
                     return False
         return True
-
+        #if it reaches this point no empty squares on board
 
     def get_winner(self):
         # Checks whole board to see if there are 3 in row (vertical, horizontal and diagonal)
         for i in xrange(3):
-            if self.gameBoard[i][0] == self.gameBoard[i][1] == self.gameBoard[i][2] and self.gameBoard[i][0] != 0:
-                return self.gameBoard[i][0]
-            elif self.gameBoard[0][i] == self.gameBoard[1][i] == self.gameBoard[2][i] and self.gameBoard[0][i]  != 0:
-                return self.gameBoard[0][i]
-            elif self.gameBoard[0][0] == self.gameBoard[1][1] == self.gameBoard[2][2] and self.gameBoard[0][0] != 0:
-                return self.gameBoard[0][0]
-            elif self.gameBoard[0][2] == self.gameBoard[1][1] == self.gameBoard[2][0] and self.gameBoard[0][2] != 0:
-                return self.gameBoard[0][2]
+            if self.game_Board[i][0] == self.game_Board[i][1] and self.game_Board[i][2]!= 0:
+                return self.game_Board[i][0]
+            elif self.game_Board[0][i] == self.game_Board[1][i] and self.game_Board[2][i] != 0:
+                return self.game_Board[0][i]
+            if self.game_Board[0][0] == self.game_Board[1][1] and self.game_Board[2][2] != 0:
+                return self.game_Board[0][0]
+            if self.game_Board[0][2] == self.game_Board[1][1] and self.game_Board[2][0] != 0:
+                return self.game_Board[0][2]
         return 0
 
 
