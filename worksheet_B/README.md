@@ -1,3 +1,4 @@
+~~~
 List = Premade list of random words
 randomWord = Random selects 1 word randomly from list
 Tries = 0
@@ -18,5 +19,6 @@ If Likeness = randomWord
 		Tries = Tries + 1
 	End if
 End While
+~~~
 
 ![alt-tag](https://raw.githubusercontent.com/StevenCowie/comp110-worksheets/master/worksheet_B/Fallout%204%20Flowchart.png)
