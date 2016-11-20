@@ -9,7 +9,7 @@ while s3 != 0:
 ~~~~
 
 (b)
-S3 = S0 but S3 also equals 0 so it will go through the loop and add S1 to S2 until S3 = 0 and by decresing S3 by 1 every time it loops, so it ends up adding S1 to S2 S0 amount of times.
+S3 = S0 but S3 also equals 0 so it will go through the loop and add S1 to S2 until S3 = 0 and by decresing S3 by 1 every time it loops, so it ends up adding S1 to S2 S0 amount of times eg if s0 if 3 and s1 is 5 you'd end up with 5+5+5 which is the same as 5x3
 
 (c)
 ~~~
@@ -27,7 +27,7 @@ while s0 != 0:
 ~~~
 
 (d)
-because the inner loop keeps looping until it has looped 1 less time than the outer loop. In the inner loop the value of s1 is multiplied by the number of loops and gets stored in s2 until the inner loop is finished and this is when s1 = s2 for when the inner loop starts its next loop, so if you put in 10 in the end you would get (10x9) the first loop, (10x9x8) the second and eventually you would end up with(10x9x8x7x6x5x4x3x2x1) when it is finished.
+because the inner loop keeps looping until the value of s0 = 0 it does this by every time it loops by taking 1 away from  s0. In the inner loop the value of s1 is multiplied by the number of loops and gets stored in s2 until the inner loop is finished and this is when s1 = s2 for when the inner loop starts its next loop, so if you put in 10 in the end you would get (10x9) the first loop, (10x9x8) the second and eventually you would end up with(10x9x8x7x6x5x4x3x2x1) when it is finished.
 
 (e)
 ~~~
