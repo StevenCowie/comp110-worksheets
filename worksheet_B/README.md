@@ -1,20 +1,22 @@
-    List = Premade list of random words
-    Import Random
-    Import SequenceMatcher
-    randomWord = Random selects 1 word randomly from list
-    Tries = 0
-    While Tries < 4
+List = Premade list of random words
+randomWord = Random selects 1 word randomly from list
+Tries = 0
+While Tries < 4
     Guess = Input
     Input asks user to input a word
-    If Guess =/= randomWord Then
-    Run SequenceMatcher for word similarity
-    Print Similarity
-    Tries = Tries + 1
-    Else Guess ==  randomWord
-    Allow access to terminal
-    EndIF
-    If Tries > 4 Then
-    End program
-    Quit
+    Likeness = 0 
+    For x = range 1 to length of randomWord
+	    If Guess = Secretword
+		    Likeness = Likeness + 1
+	End if
+End for
+Print “The likeness is = “ + Likeness / randomWord
+If Likeness = randomWord
+	Allow access to terminal
+	Exit
+	Else
+		Tries = Tries + 1
+	End if
+End While
 
-![alt-tag](https://raw.githubusercontent.com/StevenCowie/comp110-worksheets/master/Fallout%204%20mini%20game%20Flowchart.png)
+![alt-tag](https://raw.githubusercontent.com/StevenCowie/comp110-worksheets/master/worksheet_B/Fallout%204%20Flowchart.png)
